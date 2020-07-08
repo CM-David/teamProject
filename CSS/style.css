@@ -1,0 +1,28 @@
+body{
+    background-color: white;
+    color: black;
+}
+
+
+#searchbar{ 
+    background-color: #5F6670;
+    color: white;
+    margin-left: 50%;
+    margin-top: 5%;
+      padding:15px; 
+      border-radius: 10px; 
+      text-align: center;
+    } 
+    
+    input[type=text] { 
+       width: 30%; 
+       transition: width 0.30s ease-in-out;
+       transform: translate(-50%, -50%)
+    } 
+    
+    /* When the input field gets focus, 
+         change its width to 100% */
+    input[type=text]:focus { 
+      width: 70%; 
+      margin-left: 15%;
+    } 
