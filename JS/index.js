@@ -1,7 +1,7 @@
 // Script will do two main things, add/remove from ingredients item list, and send list to recipe page
 
 $(() => {
-    $("mainInput").keypress(function (e) {
+    $("#mainInput").keypress(function (e) {
         console.log('keypress'); 
         if(e.which === 13){                 // Upon hitting return, do the following:
             let item = $(this).val();       // Save input text as variable item
@@ -10,12 +10,9 @@ $(() => {
                 "class":"list-item",
                 "text": item
             });
-            let span = $("<span>",{"class":"trash"});           // span of trash can icon
-            let i = $('<i>',{"class":"fas fa-trash-alt"});      // icon of trash can
-            span.append(i);                                     // place icon in front of item text
-            li.prepend(span);
-            $('mainUL').append(li);                             // append list item to UL on page
-            $('input').val('');                                 // clear input field
+           
+            $('#mainUL').append(li);                             // append list item to UL on page
+            $('#mainInput').val('');                                 // clear input field
         }
     });
 
@@ -37,14 +34,6 @@ $(() => {
     window.location='recipes.html';                             // send browser to recipes landing
     });
 
-    $('#mainUl').on('click','li',function(){
-        $(this).toggleClass('completed');                       // Brings up trash can, currently adds crossthrough, but not neccesary?
-    });
 
-    $('#mainUl').on('click','.trash',function(){
-        $(this).parent().fadeOut(400,function(){
-            $(this).remove();
-        })
-    });
 })
 
