@@ -51,6 +51,14 @@ body {
     display: block;
 }
 
+.nutritionImage {
+    height: 290px;
+    margin-right: auto; 
+    margin-left: auto;
+    margin-top: auto;
+    display: block;
+}
+
 .font {
     font-family: "Amatic SC";
 }
