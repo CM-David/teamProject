@@ -18,8 +18,10 @@ $(() => {
 
     $('#submitButton').on('click',function(event){              // On sumbit, save ingredients list to local storage
         let ingredients = '';                                   // Init ingredients variable
-        for (var j=0; j<(('#mainField ul li').length);j++){     // For each ingredient in list
-            var li = $('#mainField ul li')[j];                  // Init list element
+        var listEl = $('ul li')
+        console.log(listEl);
+        for (var j=0; j<(('ul li').length);j++){     // For each ingredient in list
+            var li = $('ul li')[j];                  // Init list element
             if (li !== undefined){                              // Only for valid inputs
                 var text = li.innerText;                        // Save innertext of list element
                 ingredients += text;                            // Add ingredient to list of ingredients
@@ -29,9 +31,9 @@ $(() => {
             }
         }
     ingredients = ingredients.slice(0,-1);                      // Not sure what this is for yet??
-    // console.log(ingredients);
-    localStorage.ingredientArr=JSON.stringify(ingredients)      // Save ingredients list in local storage
-    window.location='recipes.html';                             // send browser to recipes landing
+    console.log(ingredients);
+    localStorage.ingredientArr = JSON.stringify(ingredients)      // Save ingredients list in local storage
+    window.location='HTML/page2Layout.html';                             // send browser to recipes landing
     });
 
 
