@@ -9,6 +9,8 @@
 
 #header{
   height: 10vh;
+  justify-content: center;
+  font-size: 5vh;
 }
 
 #footer{
@@ -18,4 +20,9 @@
 
 #form{
   height: 80vh;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
 }

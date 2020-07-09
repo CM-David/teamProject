@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+.header{
+    height: 300px;
+}
+
+.column {
+    height: 75vh;
+}
+
+.footer {
+    height: 8vh;
+}
