@@ -9,12 +9,13 @@ $(() => {
         
         // API Call
         
+        let $recipeBox = $('#recipeBox')
+
         $.get(url + Q + ingList + '&app_id=' + appID + '&app_key=' + appKey)
             .done((results) =>{
                 console.log(results);
                 for (let i = 0; i<3; i++) {
-                    console.log('attempt to read results');
-                    console.log(results.hits[i]);
+                    console.log(results.hits[i].recipe);
                 }
             })
     }
