@@ -1,0 +1,28 @@
+#inputs{
+  background-color: rgb(48, 223, 48);
+}
+
+#whipIt{
+  background-color: rgb(155, 36, 105);
+  color: white;
+}
+
+#header{
+  height: 10vh;
+  justify-content: center;
+  font-size: 5vh;
+}
+
+#footer{
+  background-color: rgb(146, 20, 140);
+  height: 10vh;
+}
+
+#form{
+  height: 80vh;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
