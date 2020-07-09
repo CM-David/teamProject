@@ -1,4 +1,4 @@
-#inputs{ 
+ #inputs{ 
     background-color: #5F6670;
     color: white;
     margin-top: 5%;
@@ -9,10 +9,12 @@
     
     input[type=text] { 
        width: 30%; 
+       margin-left: 50%;
+       margin-top: 10px;
        transition: width 0.30s ease-in-out;
        transform: translate(-50%, -50%)
     } 
-    
+     
     /* When the input field gets focus, 
          change its width to 100% */
     input[type=text]:focus { 

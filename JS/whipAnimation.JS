@@ -1,10 +1,4 @@
+$(window).on('load',function() {
+  setTimeout(function(){$('#loading').hide()},2000)
 
-
-jQuery(document).ready(function ($) {
-  $(window).load(function () {
-      setTimeout(function(){
-          $('#preloader').fadeOut('slow', function () {
-          });
-      },2000); // set the time here
-  });  
 });
