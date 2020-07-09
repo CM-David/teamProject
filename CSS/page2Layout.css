@@ -7,9 +7,24 @@ body {
 }
 
 .column {
-    height: 75vh;
+    height: 70vh;
 }
 
 .footer {
     height: 8vh;
+}
+
+.button {
+    height: 4vh;
+    width: 100%:
+}
+
+.image {
+    height: 400px;
+}
+
+.foodImage {
+    height: 200px; 
+    margin-top: 3vh;
+    margin-left: 20vh;
 }
