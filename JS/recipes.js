@@ -28,7 +28,7 @@ $(() => {
 
                     });
 
-                    let $cardPar = $('<p', {
+                    let $cardPar = $('<p>', {
                         'class': "p-1 text-center font font-weight-bold",
                         'text': results.hits[i].recipe.label
                     })
