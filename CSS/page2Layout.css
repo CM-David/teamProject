@@ -1,5 +1,13 @@
+/* Color Palette */
+/* Red: #F34213 */
+/*White: #FFFFFF*/
+/*Blue: #2D7DD2*/
+/*Green: #1ACD14*/
+/*Gray: #5F6670*/
+
 body {
     margin: 0px;
+    background-color: #FFFFFF;
 }
 
 .header{
@@ -7,9 +15,56 @@ body {
 }
 
 .column {
-    height: 75vh;
+    height: 70vh;
+    background: #FFFFFF;
 }
 
 .footer {
     height: 8vh;
+    background-color: #5F6670;
+}
+
+.buttonBox {
+    height: 4vh;
+    width: 100%;
+    
+}
+
+.buttonWidth {
+    width: 25%;
+}
+
+.buttonColor{
+    background: #2D7DD2;
+    color: #FFFFFF;
+}
+
+.image {
+    height: 400px;
+}
+
+.foodImage {
+    height: 300px; 
+    margin-right: auto; 
+    margin-left: auto;
+    margin-top: auto;
+    display: block;
+}
+
+.nutritionImage {
+    height: 290px;
+    margin-right: auto; 
+    margin-left: auto;
+    margin-top: auto;
+    display: block;
+}
+
+.font {
+    font-family: "Amatic SC";
+}
+
+.boxFont {
+    color: #5F6670;
+    font-size: x-large;
+    font-weight: bolder;
 }
