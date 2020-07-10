@@ -11,17 +11,60 @@
 			  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
 			  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../CSS/page2Layout.css">
+    <link rel="stylesheet" href="../CSS/page2NavBar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link href="fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet">
 </head>
 <body>
+    
     <div class="container-fluid h-100 p-0">
 
-        <div class="d-flex header position-relative bg-white w-100">
+            <!--Navbar starts here-->
+        <nav class="navbar navbar-expand-md navbar-dark replaceBkDark sticky-top">
+            <a class="navbar-brand replaceWarning text" href="#"></a>
+
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand text-light font-weight-bold" href="#"><i class="fas fa-mobile-alt replaceWarning p-1"></i>
+                (281)-399-8070</a>
+
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#">
+                            <i class="fas fa-home replaceWarning"></i>
+                            Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="html/services.html"><i class="fas fa-bolt replaceWarning"></i>
+                            Electrical Services <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#"><i class="fas fa-network-wired replaceWarning"></i>
+                            Data Services <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="html/contactus.html"><i class="fas fa-map-marker-alt replaceWarning"></i>
+                            Contact Us<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav><!--Navbar ends here-->
+
+        <div class="d-flex header position-relative bg-white w-100"><!--Header starts here-->
 
             <div class="d-flex justify-content-center align-items-center h-100 w-100">
 
                 <div>
-                    <img class="image" src="../Pictures/whipitLogo.PNG" alt="">
+                    <img class="image" src="../Pictures/whipUpLogo.PNG" alt="">
                 </div>
             </div>
         </div><!--End of Header-->
@@ -34,24 +77,24 @@
                     
                 </div><!--End of left column-->
                 
-                <div class="col flex-column d-flex h-100 "><h1 class="text-center font font-weight-bold">Nutrition</h1>
+                <!-- <div class="col flex-column d-flex h-100 "><h1 class="text-center font font-weight-bold">Nutrition</h1>
                     
                     <div class="col h-25 boxFont m-1 align-self-center">
 
                         <img class="nutritionImage rounded-lg" src="../Pictures/pretzel nutrition.png" alt="">                        
                         <p class="p-1 text-center font font-weight-bold">Bavarian Style Soft Pretzels</p>
                     </div><!--End of top box-->
-                    <div class="col h-25 boxFont m-1 align-self-center">
+                    <!-- <div class="col h-25 boxFont m-1 align-self-center">
 
                         <img class="nutritionImage rounded-lg" src="../Pictures/pretzel nutrition.png" alt="">                        
                         <p class="p-1 text-center font font-weight-bold">Bavarian Style Soft Pretzels</p>
                     </div><!--End of middle box-->
-                    <div class="col h-25 boxFont m-1 align-self-center">
+                    <!-- <div class="col h-25 boxFont m-1 align-self-center">
 
                         <img class="nutritionImage rounded-lg" src="../Pictures/pretzel nutrition.png" alt="">                        
                         <p class="p-1 text-center font font-weight-bold">Bavarian Style Soft Pretzels</p>
                     </div><!--End of lower box-->
-                </div><!--End of right column-->
+                <!-- </div>End of right column  -->
             </div>
             <div class="d-flex align-items-center buttonBox">
 
