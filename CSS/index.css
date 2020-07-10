@@ -1,28 +1,56 @@
-#inputs{
-  background-color: rgb(48, 223, 48);
+/* Color Palette */
+/* Red: #F34213 */
+/*White: #FFFFFF*/
+/*Blue: #2D7DD2*/
+/*Green: #1ACD14*/
+/*Gray: #5F6670*/
+
+.no-gutter{
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#whipIt{
-  background-color: rgb(155, 36, 105);
+.header{
+  display: flex;
+  justify-content: center;
+  height: 35vh;
+}
+
+.footer{
+  background-color: gray;
+  height: 10vh;
+}
+
+#test{
   color: white;
 }
 
-#header{
-  height: 10vh;
-  justify-content: center;
-  font-size: 5vh;
+
+.social-links{
+  color: white;
 }
 
-#footer{
-  background-color: rgb(146, 20, 140);
-  height: 10vh;
+/* Responsive Design */
+@media phone and (min-width: ){
+
 }
 
-#form{
-  height: 80vh;
+.responsive-img{
+  width: 100%;
+  height: auto;
 }
 
-*{
-  margin: 0px;
-  padding: 0px;
+.header-img{
+  height: 100%;
+  width: auto;
 }
+
+.reset{
+  font-size: 100%;
+}
+
+.main-content{
+  height: 55vh;
+}
+
+/* Image Styling */
