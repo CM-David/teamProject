@@ -26,14 +26,20 @@ $(() => {
                 var text = li.innerText;                        // Save innertext of list element
                 ingredients += text;                            // Add ingredient to list of ingredients
                 ingredients += ',';                             // add comma for more ingredients
-                                 
+                
                 // window.location.pathname = '/new'
             }
         }
     ingredients = ingredients.slice(0,-1);                      // Not sure what this is for yet??
+<<<<<<< HEAD
+    // console.log(ingredients);
+    localStorage.ingredientArr=JSON.stringify(ingredients)      // Save ingredients list in local storage
+    window.location='https://www.google.com';                             // send browser to recipes landing
+=======
     console.log(ingredients);
     localStorage.ingredientArr = JSON.stringify(ingredients)      // Save ingredients list in local storage
     window.location='HTML/page2Layout.html';                             // send browser to recipes landing
+>>>>>>> master
     });
 
 
