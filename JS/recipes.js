@@ -14,11 +14,11 @@ $(() => {
         $.get(url + Q + ingList + '&app_id=' + appID + '&app_key=' + appKey)
             .done((results) =>{
                 console.log(results);
-                for (let i = 0; i<3; i++) {
+                for (let i = 0; i<6; i++) {
                     console.log(results.hits[i].recipe)
                     
                     let $cardDiv = $('<div>', {
-                        'class': 'col flex-column h-25 boxFont m-1',
+                        'class': 'col-6-sm col-4-md flex-wrap flex-column h-25 boxFont m-1',
                     });
 
                     let $cardIMG = $('<img>', {
