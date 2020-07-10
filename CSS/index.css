@@ -8,6 +8,15 @@
 .no-gutter{
   padding-left: 0;
   padding-right: 0;
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC')
+#inputs{
+  background-color: rgb(48, 223, 48);
+}
+
+#whipIt{
+  background-color: rgb(155, 36, 105);
+  color: white;
+
 }
 
 .header{
