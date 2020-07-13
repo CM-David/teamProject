@@ -34,7 +34,7 @@ $(() => {
                     // })
                     let $cardButton = $('<button>', {
                         type: "button",
-                        class: "btn btn-primary",
+                        class: "btn2 second",
                         'data-toggle': "modal",
                         'data-target': "#exampleModal",
                         'data-whatever': results.hits[i].recipe.label,
