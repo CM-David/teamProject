@@ -11,11 +11,11 @@ body {
 }
 
 .header{
-    height: 300px;
+    height: 100%;
 }
 
 .column {
-    height: 70vh;
+    height: 25vh;
     background: #FFFFFF;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 .buttonBox {
-    height: 4vh;
+    height: 6vh;
     width: 100%;
     
 }
@@ -39,24 +39,13 @@ body {
     color: #FFFFFF;
 }
 
-.image {
-    height: 400px;
+.headerImage {
+    height: 40vh;
 }
 
 .foodImage {
-    height: 300px; 
-    margin-right: auto; 
-    margin-left: auto;
-    margin-top: auto;
-    display: block;
-}
-
-.nutritionImage {
-    height: 290px;
-    margin-right: auto; 
-    margin-left: auto;
-    margin-top: auto;
-    display: block;
+    height: 20%;
+    width: 100%;
 }
 
 .font {
