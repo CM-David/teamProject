@@ -108,6 +108,7 @@
 
 .shelfPic{
     position: absolute;
+    text-align: center;
 }
 .shelfPic img{
     max-width: 399px;
@@ -127,6 +128,7 @@
 .shelfPic1{
     position: absolute;
     top: 600px;
+    text-align: center;
 }
 .shelfPic1 img{
     max-width: 399px;
@@ -142,6 +144,7 @@
 .shelfPic2{
     position: absolute;
     top: 500px;
+    
 }
 .shelfPic2 img{
     max-width: 399px;
@@ -151,6 +154,7 @@
 
 .shelfPic2:after{
     content: "";
+    list-style-type: none;
     
 }
 

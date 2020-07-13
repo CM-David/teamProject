@@ -18,7 +18,7 @@ $(() => {
                     console.log(results.hits[i].recipe)
                     
                     let $cardDiv = $('<div>', {
-                        'class': 'col-sm-6 col-md-3 col-lg-2 flex-wrap flex-column h-25 boxFont m-1 bg-warning',
+                        'class': 'col-sm-6 col-md-3 col-lg-2 flex-wrap flex-column h-25 boxFont m-1',
                     });
 
                     let $cardIMG = $('<img>', {
@@ -34,7 +34,7 @@ $(() => {
                     // })
 
                     let $buttonDiv = $('<div>', {
-                        class: "w-80 p-2 flex-column justify-content-center bg-danger"
+                        class: "w-80 p-2 flex-column justify-content-center"
                     })
 
                     let $cardButton = $('<button>', {
