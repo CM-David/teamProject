@@ -14,6 +14,8 @@ $(() => {
         $.get(url + Q + ingList + '&app_id=' + appID + '&app_key=' + appKey)
             .done((results) =>{
                 console.log(results);
+                localStorage.resultsList = JSON.stringify(results)
+
                 for (let i = 0; i<9; i++) {
                     console.log(results.hits[i].recipe)
                     
@@ -45,15 +47,19 @@ $(() => {
                         'data-toggle': "modal",
                         'data-target': "#exampleModal",
                         'data-whatever': results.hits[i].recipe.label,
-                        'text': results.hits[i].recipe.label
+                        'text': results.hits[i].recipe.label,
+                        'data-index': i
                     })
 
                     $buttonDiv.append($cardButton)
                     $cardDiv.append($cardIMG)
                     $cardDiv.append($buttonDiv)
                     $recipeBox.append($cardDiv)
+
+                    
                       
                 }
+                
             })
     }
     catch (err) {
@@ -72,5 +78,35 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     var modal = $(this)
     modal.find('.modal-title').text("Nutrition Information for: ")
     modal.find('.modal-recipe').text(recipeName)
-    modal.find('.modal-body input').val(recipeName)
+
+    var index = button.data('index')
+    var resultsList = JSON.parse(localStorage.resultsList)
+    var nutrition = resultsList.hits[index].recipe.totalDaily
+    console.log(nutrition);
+    console.log(Object.keys(nutrition).length);
+    var len = Object.keys(nutrition).length
+
+    let $nutritionBox = $('.nutrition-div')
+
+
+    for (k of Object.keys(nutrition)) {
+        console.log(k);
+        let text = nutrition[k].label + ': ' + nutrition[k].quantity.toFixed(0) + '% DV'
+        let $nutrient = $('<p>', {
+            'text': text 
+            })
+        console.log(text);
+        $nutritionBox.append($nutrient)
+      }
+
+    // for (let i=0; i<len; i++) {
+    //     console.log(nutrition[i])
+    //     let $nutrient = $('<p>', {
+            
+    //         // 'text': nutrition[i].label + ': ' + nutrition[i].quantity.toFixed(0) + '%' 
+    //     })
+    //     $nutritionBox.append($nutrient)
+        
+    // }
+
   })
