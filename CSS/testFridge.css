@@ -107,24 +107,50 @@
 
 .shelfPic{
     position: absolute;
-    width: 172px;
-    height: 100px;
-    z-index: 0;
-    top: 
 }
 .shelfPic img{
     max-width: 399px;
     max-height: 600px;
+    border-bottom: 10px solid grey
 }
 
 .shelfPic:after{
     content: "";
+    
 }
 
+.shelfPic:nth-child(2){
+    top: 400PX
+}
 
+.shelfPic1{
+    position: absolute;
+    top: 600px;
+}
+.shelfPic1 img{
+    max-width: 399px;
+    max-height: 600px;
+    border-bottom: 10px solid grey
+}
 
+.shelfPic1:after{
+    content: "";
+    
+}
 
+.shelfPic2{
+    position: absolute;
+    top: 500px;
+}
+.shelfPic2 img{
+    max-width: 399px;
+    max-height: 600px;
+    border-bottom: 10px solid grey
+}
 
-
+.shelfPic2:after{
+    content: "";
+    
+}
 
 
