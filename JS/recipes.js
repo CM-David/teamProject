@@ -1,8 +1,8 @@
 $(() => {
     try{
+        const appID = config.appID;
+        const appKey = config.appKey;
         const url = 'https://api.edamam.com/search?';
-        const appID = '629a402c';
-        const appKey = 'ee641219e9b3411559d60ec0116cc570';
         const Q = 'q=';
         var ingList = JSON.parse(localStorage.ingredientArr);
         var selections = [];
