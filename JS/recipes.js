@@ -18,7 +18,7 @@ $(() => {
                     console.log(results.hits[i].recipe)
                     
                     let $cardDiv = $('<div>', {
-                        'class': 'col-sm-6 col-md-3 col-lg-2 flex-wrap flex-column h-25 boxFont m-1 bg-warning',
+                        'class': 'col-sm-6 col-md-3 col-lg-2 flex-wrap flex-column h-25 boxFont m-1',
                     });
 
                     let $cardIMG = $('<img>', {
@@ -34,7 +34,7 @@ $(() => {
                     // })
 
                     let $buttonDiv = $('<div>', {
-                        class: "w-80 p-2 flex-column justify-content-center bg-danger"
+                        class: "w-80 p-2 flex-column justify-content-center"
                     })
 
                     let $cardButton = $('<button>', {
@@ -66,10 +66,11 @@ $(() => {
 
 $('#exampleModal').on('show.bs.modal', function (event) {
     var button = $(event.relatedTarget) // Button that triggered the modal
-    var recipient = button.data('whatever') // Extract info from data-* attributes
+    var recipeName = button.data('whatever') // Extract info from data-* attributes
     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var modal = $(this)
-    modal.find('.modal-title').text('New message to ' + recipient)
-    modal.find('.modal-body input').val(recipient)
+    modal.find('.modal-title').text("Nutrition Information for: ")
+    modal.find('.modal-recipe').text(recipeName)
+    modal.find('.modal-body input').val(recipeName)
   })
