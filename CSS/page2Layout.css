@@ -11,7 +11,7 @@ body {
 }
 
 .header{
-    height: 100%;
+    height: 40vh;
 }
 
 .column {
@@ -22,19 +22,18 @@ body {
 
 
 .buttonBox {
-    height: 6vh;
+    height: 15vh;
     width: 100%;
     
 }
 
-
-
 .headerImage {
-    height: 40vh;
+    height: 100%;
+    max-width: 100%;
 }
 
 .foodImage {
-    height: 20%;
+    height: 100%;
     width: 100%;
 }
 
