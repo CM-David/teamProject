@@ -19,67 +19,67 @@
 </head>
 <body>
     <!--Navbar starts here-->
-    <nav class="navbar navbar-expand-lg navbar-light navBG font font-weight-bolder">
+    <nav class="navbar navbar-expand-lg navbar-light navBG font font-weight-bolder d-flex justify-content-between fixed-top navbar-expand-sm navbar-expand-md navbar-expand-lg">
         <a class="nav-link text-light navFontSize" href="../index.html"><i class="fas fa-home iconColor"></i> Home <span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="nav-link text-light navFontSize" href="https://www.google.com/search?q=pizza+near+me&oq=pizza+near+me&aqs=chrome..69i57j0l7.5297j0j7&sourceid=chrome&ie=UTF-8"><i class="fas fa-pizza-slice iconColor"></i> When In Doubt <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-light navFontSize" href="https://www.google.com/search?q=pizza+near+me&oq=pizza+near+me&aqs=chrome..69i57j0l7.5297j0j7&sourceid=chrome&ie=UTF-8"><i class="fas fa-pizza-slice iconColor"></i> When In Doubt...Pizza <span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </div>
-        </div> -->
       </nav><!--Navbar ends here-->
 
+    <!--Header Starts Here-->
+    <div class="container-fluid w-100">
+        <div class="row header">
+            <div class="col-sm col-md col-lg d-flex w-100 align-self-center">
+                <img class="headerImage img-fluid mx-auto" src="../Pictures/whipUpLogo.PNG" alt="Responsive image">
+            </div>
+        </div>
+    </div><!--End of Header-->
+
+    <!--Container starts here-->
     <div class="container-fluid h-100 p-0">
 
-        <!--Header starts here-->
-        <div class="d-flex header position-relative bg-white w-100">
+        <!--Header Title-->
+        <div><h1 class="text-center font font-weight-bold">Recipes</h1></div><!--End of Header Title-->
 
-            <div class="d-flex justify-content-center align-items-center h-100 w-100">
+        <!--Start of Main Body-->
+        <div class="row position-relative w-100">
+            <div class="d-flex align-items-center justify-content-between column w-100 col-sm col-md col-lg font foodImage" id="recipeBox">
+                <!-- <div class="col flex-row d-flex h-100 justify-content-between font" id="recipeBox"></div> -->
+            </div><!--End of column-->
 
-                <div>
-                    <img class="image" src="../Pictures/whipUpLogo.PNG" alt="">
-                </div>
-            </div>
-        </div><!--End of Header-->
-
-        <div class="position-relative w-100">
-
-            <div class="d-flex align-items-center column w-100">
-                <h1 class="text-center font font-weight-bold">Recipe</h1>
-                <div class="col flex-row d-flex h-100 justify-content-between" id="recipeBox">
-                    
-                </div><!--End of column-->
-            </div>
+            <!--Start of Button Row-->
             <div class="d-flex align-items-center buttonBox">
 
-                <div class="col d-flex flex-row justify-content-center h-100 text-light m-1">
+                <div class="col-sm col-md col-lg d-flex flex-row justify-content-center h-100 text-light m-1">
+
 
                     <button class="btn2 second" type="submit">Try Again</button>
+                  
                 </div><!--End of Try Again Button-->
 
-                <div class="col d-flex flex-row justify-content-center h-100 text-light m-1">
+                <div class="col-sm col-md col-lg d-flex flex-row justify-content-center h-100 text-light m-1">
+
 
                     <button class="btn2 second" type="submit">Start Over</button>
-                </div><!--End of Start Over Button-->
 
-               
+                </div><!--End of Start Over Button-->
+            </div><!--End of Button Row-->
+
+          
   
 
 
             </div>
             <footer class="d-flex footer w-100 text-light">Footer</footer><!--End of footer-->   
         </div>       
+
     </div><!--end of container-->
 
+    <!--Start of Recipe Card Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -107,7 +107,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div><!--End of Recipe Card Modal-->
 
 
     <!-- Optional JavaScript -->
