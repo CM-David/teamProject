@@ -19,21 +19,17 @@
 </head>
 <body>
     <!--Navbar starts here-->
-    <nav class="navbar navbar-expand-lg navbar-light navBG font font-weight-bolder d-flex justify-content-between fixed-top navbar-expand-sm navbar-expand-md navbar-expand-lg">
-        <a class="nav-link text-light navFontSize" href="../index.html"><i class="fas fa-home iconColor"></i> Home <span class="sr-only">(current)</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="nav-link text-light navFontSize" href="https://www.google.com/search?q=pizza+near+me&oq=pizza+near+me&aqs=chrome..69i57j0l7.5297j0j7&sourceid=chrome&ie=UTF-8"><i class="fas fa-pizza-slice iconColor"></i> When In Doubt...Pizza <span class="sr-only">(current)</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-      </nav><!--Navbar ends here-->
+    <div class="container-fluid bg-primary p-0">
+        <nav class="navbar navbar-light navBG font font-weight-bolder d-flex justify-content-between">
+            <a class="nav-link text-light navFontSize" href="../index.html"><i class="fas fa-home iconColor"></i> Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link text-light navFontSize" href="https://www.google.com/search?q=pizza+near+me&oq=pizza+near+me&aqs=chrome..69i57j0l7.5297j0j7&sourceid=chrome&ie=UTF-8"><i class="fas fa-pizza-slice iconColor"></i> When In Doubt...Pizza <span class="sr-only">(current)</span></a>
+        </nav><!--Navbar ends here-->
+    </div>
 
     <!--Header Starts Here-->
-    <div class="container-fluid w-100">
+    <div class="container-fluid w-100 bg-dark p-3">
         <div class="row header">
-            <div class="col-sm col-md col-lg d-flex w-100 align-self-center">
+            <div class="col-sm col-md col-lg d-flex w-100 align-self-center h-100 ">
                 <img class="headerImage img-fluid mx-auto" src="../Pictures/whipUpLogo.PNG" alt="Responsive image">
             </div>
         </div>
@@ -46,9 +42,7 @@
         <div><h1 class="text-center font font-weight-bold">Recipes</h1></div><!--End of Header Title-->
 
         <!--Start of Main Body-->
-        <div class="row position-relative w-100">
-            <div class="d-flex align-items-center justify-content-between column w-100 col-sm col-md col-lg font foodImage" id="recipeBox">
-                <!-- <div class="col flex-row d-flex h-100 justify-content-between font" id="recipeBox"></div> -->
+        <div class="row w-100 font m-0" id="recipeBox">
             </div><!--End of column-->
 
             <!--Start of Button Row-->
@@ -69,11 +63,6 @@
                 </div><!--End of Start Over Button-->
             </div><!--End of Button Row-->
 
-          
-  
-
-
-            </div>
             <footer class="d-flex footer w-100 text-light">Footer</footer><!--End of footer-->   
         </div>       
 
