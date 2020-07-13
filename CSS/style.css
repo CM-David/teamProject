@@ -29,6 +29,12 @@ body{
     color: black;
     margin: 0px;
 }
+label{
+    color: #F34213;
+    font-family: 'Amatic SC';
+    font-size: 100px;
+    font-weight: bold;
+}
 
 #form{
     height: 80vh;

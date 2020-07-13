@@ -108,11 +108,11 @@
 
 .shelfPic{
     position: absolute;
+    text-align: center;
 }
 .shelfPic img{
     max-width: 399px;
     max-height: 600px;
-    border-bottom: 10px solid grey
 }
 
 .shelfPic:after{
@@ -126,12 +126,12 @@
 
 .shelfPic1{
     position: absolute;
-    top: 600px;
+    top: 570px;
+    text-align: center;
 }
 .shelfPic1 img{
     max-width: 399px;
     max-height: 600px;
-    border-bottom: 10px solid grey
 }
 
 .shelfPic1:after{
@@ -142,15 +142,16 @@
 .shelfPic2{
     position: absolute;
     top: 500px;
+    
 }
 .shelfPic2 img{
     max-width: 399px;
     max-height: 600px;
-    border-bottom: 10px solid grey
 }
 
 .shelfPic2:after{
     content: "";
+    list-style-type: none;
     
 }
 

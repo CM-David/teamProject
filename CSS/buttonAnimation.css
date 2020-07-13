@@ -1,16 +1,18 @@
- #inputs{ 
-    background-color: #5F6670;
+ input{ 
+    background-color: #F34213;
     color: white;
     margin-top: 5%;
       padding:15px; 
       border-radius: 10px; 
       text-align: center;
+      font-family: AMATIC SC;
+      font-size: 40px;
     } 
     
     input[type=text] { 
-       width: 30%; 
+       width: 100%; 
        margin-left: 50%;
-       margin-top: 10px;
+       margin-top: 30px;
        transition: width 0.30s ease-in-out;
        transform: translate(-50%, -50%)
     } 
@@ -18,8 +20,12 @@
     /* When the input field gets focus, 
          change its width to 100% */
     input[type=text]:focus { 
-      width: 70%; 
+      width: 250%; 
     } 
+
+    ::placeholder{
+      color: white;
+    }
 
 
     .btn {
@@ -51,7 +57,7 @@
       box-shadow: 0 0 40px 40px white inset;
     }
 
-    .btn2 {
+    .btn2, #submitButton {
       box-sizing: border-box;
       background-color: transparent;
       border: 2px solid #F34213;
@@ -67,14 +73,40 @@
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
     }
-    .btn2:hover, .btn:focus {
+    .btn2:hover, .btn:focus, #submitButton:hover {
       color:white;
       outline: 0;
     }
 
-    .second {
+    .second, #submitButton {
       transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     }
-    .second:hover {
+    .second:hover, #submitButton:hover {
       box-shadow: 0 0 40px 40px #F34213 inset;
     }
+
+    li{
+      font-family: 'Abel', sans-serif;
+      background-color: #fff;
+      font-size:1.2rem;
+      height: 45px;
+      line-height: 45px;
+      color:#666
+  }
+
+    .trash{
+      background-color:#e74c3c;
+      height:45px;
+      margin-right:20px;
+      width:0;
+      text-align: center;
+      color:white;
+      display: inline-block;
+      transition: 0.3s linear;
+      opacity:0;
+  }
+
+  li:hover .trash {
+    width:45px;
+    opacity:1;
+}
