@@ -14,11 +14,11 @@ $(() => {
         $.get(url + Q + ingList + '&app_id=' + appID + '&app_key=' + appKey)
             .done((results) =>{
                 console.log(results);
-                for (let i = 0; i<6; i++) {
+                for (let i = 0; i<9; i++) {
                     console.log(results.hits[i].recipe)
                     
                     let $cardDiv = $('<div>', {
-                        'class': 'col-6-sm col-4-md flex-wrap flex-column h-25 boxFont m-1',
+                        'class': 'col-sm-6 col-md-3 col-lg-2 flex-wrap flex-column h-25 boxFont m-1 bg-warning',
                     });
 
                     let $cardIMG = $('<img>', {
@@ -32,17 +32,25 @@ $(() => {
                     //     'class': "p-1 text-center font font-weight-bold",
                     //     'text': results.hits[i].recipe.label
                     // })
+
+                    let $buttonDiv = $('<div>', {
+                        class: "w-80 p-2 flex-column justify-content-center bg-danger"
+                    })
+
                     let $cardButton = $('<button>', {
                         type: "button",
-                        class: "btn btn-primary",
+
+                        class: "btn2 second",
+
                         'data-toggle': "modal",
                         'data-target': "#exampleModal",
                         'data-whatever': results.hits[i].recipe.label,
                         'text': results.hits[i].recipe.label
                     })
 
+                    $buttonDiv.append($cardButton)
                     $cardDiv.append($cardIMG)
-                    $cardDiv.append($cardButton)
+                    $cardDiv.append($buttonDiv)
                     $recipeBox.append($cardDiv)
                       
                 }

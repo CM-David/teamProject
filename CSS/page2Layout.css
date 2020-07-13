@@ -19,10 +19,7 @@ body {
     background: #FFFFFF;
 }
 
-.footer {
-    height: 8vh;
-    background-color: #5F6670;
-}
+
 
 .buttonBox {
     height: 6vh;
@@ -30,14 +27,7 @@ body {
     
 }
 
-.buttonWidth {
-    width: 25%;
-}
 
-.buttonColor{
-    background: #2D7DD2;
-    color: #FFFFFF;
-}
 
 .headerImage {
     height: 100%;
