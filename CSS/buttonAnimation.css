@@ -29,14 +29,15 @@
       border-radius: 0.6em;
       color: white;
       cursor: pointer;
-      display: flex;
+      /* display: flex; */
       font-size: 1rem;
       line-height: 1;
       margin: 20px;
-      padding: 1.2em 2.8em;
-      text-align: center;
+      padding: 1.2em;
+      text-align: center !important; 
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
+      width: 40vw;
     }
     .btn:hover, .btn:focus {
       color:#F34213;
