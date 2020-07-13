@@ -27,6 +27,7 @@ Can be a supressive color only use for accents of something
 body{
     background-color: white;
     color: black;
+    margin: 0px;
 }
 
 #form{
@@ -54,4 +55,5 @@ body{
     #footer{
         background-color: #F34213;
         height: 10vh;
+        margin: 0;
       }
