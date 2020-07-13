@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Whip Up</title>
+    <title>Recipes</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script
@@ -29,7 +29,7 @@
     </div>
 
     <!--Header Starts Here-->
-    <div class="container-fluid w-100 bg-dark p-3">
+    <div class="container-fluid w-100 ">
         <div class="row header">
             <div class="col-sm col-md col-lg d-flex w-100 align-self-center h-100 ">
                 <img class="headerImage img-fluid mx-auto" src="../Pictures/whipUpLogo.PNG" alt="Responsive image">
@@ -44,39 +44,35 @@
         <div><h1 class="text-center font font-weight-bold">Recipes</h1></div><!--End of Header Title-->
 
         <!--Start of Main Body-->
-        <div class="row position-relative w-100">
-            <div class="d-flex justify-content-center flex-row w-100 font foodImage flex-wrap" id="recipeBox">
-                <!-- <div class="col flex-row d-flex h-100 justify-content-between font" id="recipeBox"></div> -->
-            </div><!--End of column-->
+        <div class="row position-relative d-flex w-100 justify-content-center flex-row w-100 font foodImage flex-wrap mx-0" id="recipeBox"></div>
+            <!-- <div class="d-flex justify-content-center flex-row w-100 font foodImage flex-wrap" id="recipeBox"></div>End of column -->
 
             <!--Start of Button Row-->
-            <div class="d-flex align-items-center buttonBox">
+        <div class="d-flex align-items-center buttonBox">
 
-                <div class="col-sm col-md col-lg d-flex flex-row justify-content-center h-100 text-light m-1">
-
-
-                    <button class="btn2 second" type="submit">Try Again</button>
-                  
-                </div><!--End of Try Again Button-->
-
-                <div class="col-sm col-md col-lg d-flex flex-row justify-content-center h-100 text-light m-1">
+            <div class="col-sm col-md col-lg d-flex flex-row justify-content-center h-100 text-light m-1">
 
 
-                    <button class="btn2 second" type="submit">Start Over</button>
+                <button class="btn2 second" type="submit">Try Again</button>
+                
+            </div><!--End of Try Again Button-->
 
-                </div><!--End of Start Over Button-->
-            </div><!--End of Button Row-->
+            <div class="col-sm col-md col-lg d-flex flex-row justify-content-center h-100 text-light m-1">
 
-            </div>
-            <div class="d-flex flex-row align-items-center" id="footer">
 
-        <div class="col-6 d-flex justify-content-center">
-            <button class="btn first">About Us</button>
+                <button class="btn2 second" type="submit">Start Over</button>
+
+            </div><!--End of Start Over Button-->
+        </div><!--End of Button Row-->
         </div>
-        <div class="col-6 d-flex justify-content-center">
-            <button class="btn first">Github</button><!--End of footer-->   
-        </div>       
-
+        <div class="d-flex flex-row align-items-center position-relative " id="footer">
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn first">About Us</button>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <button class="btn first">Github</button><!--End of footer-->   
+            </div>       
+        </div>
     </div><!--end of container-->
 
     <!--Start of Recipe Card Modal-->
