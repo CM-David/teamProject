@@ -34,7 +34,7 @@ $(() => {
                     // })
 
                     let $buttonDiv = $('<div>', {
-                        class: "w-80 p-2 flex-column justify-content-center align-items-center"
+                        class: "w-100 p-2 d-flex flex-row justify-content-center align-items-center"
                     })
 
                     let $cardButton = $('<button>', {
