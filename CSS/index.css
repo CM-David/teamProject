@@ -57,15 +57,15 @@ body {
   color: white;
 }
 
-/* Responsive Design */
+/* Responsive Design
 @media phone and (min-width: ){
 
-}
+} */
 
-.responsive-img{
+/* .responsive-img{
   width: 100%;
   height: auto;
-}
+} */
 
 /* .header-img{
   height: 100%;
@@ -76,8 +76,8 @@ body {
   font-size: 100%;
 }
 
-.main-content{
+/* .main-content{
   height: 55vh;
-}
+} */
 
 /* Image Styling */
