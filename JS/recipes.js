@@ -70,6 +70,33 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var modal = $(this)
-    modal.find('.modal-title').text('New message to ' + recipient)
-    modal.find('.modal-body input').val(recipient)
+
+    modal.find('.modal-title').text("Nutrition Information for: ")
+    modal.find('.modal-recipe').text(recipeName)
+    
+
+    var index = button.data('index')
+    var resultsList = JSON.parse(localStorage.resultsList)
+    var nutrition = resultsList.hits[index].recipe.totalDaily
+    var recipeURL = resultsList.hits[index].recipe.url
+    console.log(nutrition);
+    console.log(Object.keys(nutrition).length);
+    var len = Object.keys(nutrition).length
+
+    let $nutritionBox = $('.nutrition-div')
+
+    $('#urlLink').attr('href', recipeURL)
+
+    for (k of Object.keys(nutrition)) {
+        console.log(k);
+        let text = nutrition[k].label + ': ' + nutrition[k].quantity.toFixed(0) + '% DV'
+        let $nutrient = $('<p>', {
+            'text': text,
+            'class' : 'font p-0'
+            })
+        console.log(text);
+        $nutritionBox.append($nutrient)
+      }
+
+   
   })
