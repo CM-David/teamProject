@@ -40,13 +40,12 @@ label{
     font-family: 'Amatic SC';
     font-weight: bolder;
     list-style-type: none;
-    font-size: 50px;
+    font-size: 6vw;
     color: #F34213;
     text-align: left;
-    margin-bottom: 15px;
-    transition: width 0.30s ease-in-out;
-    transform: translate(-50%, -50%)
-
+    margin-bottom: 2%;
+    list-style-position: inside;
+    height: auto;
 }
 
 

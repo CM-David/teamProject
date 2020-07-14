@@ -11,7 +11,7 @@ $(() => {
                 "text": item
             });
            
-            let span = $("<span>",{"class":"trash"});
+            let span = $("<div>",{"class":"trash"});
                         let i = $('<i>',{"class":"fas fa-trash-alt"});
                         span.append(i);
                         li.prepend(span);
