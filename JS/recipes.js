@@ -14,13 +14,10 @@ $(() => {
         $.get(url + Q + ingList + '&app_id=' + appID + '&app_key=' + appKey)
             .done((results) =>{
                 console.log(results);
-                localStorage.resultsList = JSON.stringify(results)
-
                 for (let i = 0; i<9; i++) {
                     console.log(results.hits[i].recipe)
                     
                     let $cardDiv = $('<div>', {
-
                         'class': 'col-sm-6 col-md-3 col-lg-2 flex-wrap flex-column h-25 boxFont m-1 align-items-center',
                     });
 
@@ -37,7 +34,6 @@ $(() => {
                     // })
 
                     let $buttonDiv = $('<div>', {
-
                         class: "w-100 p-2 d-flex flex-row justify-content-center align-items-center"
                     })
 
@@ -50,18 +46,15 @@ $(() => {
                         'data-target': "#exampleModal",
                         'data-whatever': results.hits[i].recipe.label,
                         'text': results.hits[i].recipe.label,
-                        'data-index': i
+                        'data-index' : i
                     })
 
                     $buttonDiv.append($cardButton)
                     $cardDiv.append($cardIMG)
                     $cardDiv.append($buttonDiv)
                     $recipeBox.append($cardDiv)
-
-                    
                       
                 }
-                
             })
     }
     catch (err) {
@@ -78,6 +71,7 @@ $('#exampleModal').on('show.bs.modal', function (event) {
     // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
     // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
     var modal = $(this)
+
     modal.find('.modal-title').text("Nutrition Information for: ")
     modal.find('.modal-recipe').text(recipeName)
     
@@ -98,12 +92,12 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         console.log(k);
         let text = nutrition[k].label + ': ' + nutrition[k].quantity.toFixed(0) + '% DV'
         let $nutrient = $('<p>', {
-            'text': text 
+            'text': text,
+            'class' : 'font p-0'
             })
         console.log(text);
         $nutritionBox.append($nutrient)
       }
 
-    
-
+   
   })

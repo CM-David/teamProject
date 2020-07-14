@@ -1,3 +1,15 @@
+ /*Background color: White
+Text color: #5F6670
+Accents:
+#F34213 Couquelicot
+Shades of red, yellow and orange psycholligically make you hungery
+
+#1ACD14 Lime green
+Green conveys fresh and clean
+
+#2D7DD2 Bright Navy Blue
+Can be a supressive color only use for accents of something*/
+ 
  input{ 
     background-color: #F34213;
     color: white;
@@ -91,22 +103,24 @@
       font-size:1.2rem;
       height: 45px;
       line-height: 45px;
-      color:#666
+      color:#666;
+      
   }
 
     .trash{
-      background-color:#e74c3c;
-      height:45px;
-      margin-right:20px;
+      background-color:#F34213;
+      height:20px;
+      margin-right:30px;
       width:0;
       text-align: center;
       color:white;
-      display: inline-block;
+      display: inline;
       transition: 0.3s linear;
       opacity:0;
+      
   }
 
   li:hover .trash {
-    width:45px;
+    width:20px;
     opacity:1;
 }
