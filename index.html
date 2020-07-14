@@ -53,15 +53,18 @@
       <div class="row position-relative d-flex w-100 flex-row justify-content-center main-content flex-wrap mx-0">
         <div class="d-flex col-sm col-md flex-column align-items-center justify-contents-center w-100">
             <label class="text-center" for="ingredients">What do you have in your fridge?</label>
-            <input class="d-flex align-items-center justify-contents-center w-100" type="text" id="mainInput" placeholder="Enter Ingredients">
-            <ul id="mainUL">
-            </ul>
+            <div class="input-group">
+              <input type="text" id="mainInput" placeholder="Enter Ingredients">
+            </div>
+            <div class="">
+              <ul class="list-inline" id="mainUL"></ul>
+            </div>
+            <div>
+              <button style="font-family: AMATIC SC; font-size: 30px;" id="submitButton" >Whip It!</button>        
+            </div>
         </div>
       </div>
     </div>        
-    <div>
-      <button style="font-family: AMATIC SC; font-size: 30px;" id="submitButton" >Whip It!</button>        
-    </div>
     <!--Start of footer--> 
     <div class="d-flex align-items-end container-fluid h-100 p-0">
       <div class="row flex-row align-items-center h-100" id="footer">
