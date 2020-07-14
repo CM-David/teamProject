@@ -98,7 +98,8 @@ $('#exampleModal').on('show.bs.modal', function (event) {
         console.log(k);
         let text = nutrition[k].label + ': ' + nutrition[k].quantity.toFixed(0) + '% DV'
         let $nutrient = $('<p>', {
-            'text': text 
+            'text': text,
+            'class' : 'font p-0'
             })
         console.log(text);
         $nutritionBox.append($nutrient)

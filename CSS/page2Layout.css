@@ -47,6 +47,21 @@ body {
     font-weight: bolder;
 }
 
+.nutritionFont {
+    color: #F34213;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
 .modal-recipe{
     text-align: center;
+}
+
+a {
+    color: #F34213;
+}
+
+a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
 }
