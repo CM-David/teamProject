@@ -19,6 +19,11 @@ body {
   height: 40vh;
 }
 
+.column {
+  height: 25vh;
+  background: #FFFFFF;
+}
+
 .headerImage {
   height: 100%;
   max-width: 100%;
