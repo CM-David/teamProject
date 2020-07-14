@@ -28,6 +28,7 @@ Can be a supressive color only use for accents of something*/
     background: #fff;
     display: block;
     margin-bottom: 150px;
+    max-width: 407px;
 }
 
 .fridge:before, .fridge:after{
@@ -123,8 +124,10 @@ Can be a supressive color only use for accents of something*/
     text-align: center;
 }
 .shelfPic img{
-    max-width: 399px;
+    max-width: 369px;
     max-height: 600px;
+    width: 100%;
+    right: -10px;
 }
 
 .shelfPic:after{
