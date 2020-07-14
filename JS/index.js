@@ -11,8 +11,12 @@ $(() => {
                 "text": item
             });
            
-            $('#mainUL').append(li);                             // append list item to UL on page
-            $('#mainInput').val('');                                 // clear input field
+            let span = $("<span>",{"class":"trash"});
+                        let i = $('<i>',{"class":"fas fa-trash-alt"});
+                        span.append(i);
+                        li.prepend(span);
+                        $('ul').append(li);
+                        $('input').val('');                                 // clear input field
         }
     });
 
@@ -37,7 +41,13 @@ $(() => {
     });
 
 
+
+    $('#mainUL').on('click','.trash',function(){
+        $(this).parent().fadeOut(400,function(){
+            $(this).remove();
+        })
+    });
+    
+
+
 })
-
-
-

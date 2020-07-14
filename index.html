@@ -49,9 +49,9 @@
     </div><!--End of Header-->
 
     <!--Main section starts here-->
-    </div>
-      <div class="d-flex flex-row justify-content-center main-content">
-        <div class="d-flex flex-column align-items-center">
+    </div class="container-fluid h-100 p-0">
+      <div class="row position-relative d-flex w-100 flex-row justify-content-center main-content flex-wrap mx-0">
+        <div class="d-flex col-sm col-md flex-column align-items-center">
           <div>
             <label for="ingredients">What do you have in your fridge?</label>
           </div>
@@ -59,15 +59,12 @@
             <input type="text" id="mainInput" placeholder="Enter Ingredients">
           </div>
           <div>
-            <ul id="mainUL">
-              <span class="trash">
-                <i class="fas fa-trash-alt"></i>
-              </span>
-              <li>Chicken</li>
+            <ul id="mainUL" >
             </ul>
           </div>
           <div>
-            <input type="submit" style="font-family: AMATIC SC; font-size: 30px;" id="submitButton" value="Whip It!" href="">
+            <button style="font-family: AMATIC SC; font-size: 30px;" id="submitButton">Whip It!</button>
+
             
           </div>
           </div>
