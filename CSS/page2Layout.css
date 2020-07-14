@@ -45,6 +45,10 @@ body {
     font-family: "Amatic SC";
 }
 
+.headerFont{
+    font-size: 8vw;
+}
+
 .boxFont {
     color: #5F6670;
     font-size: x-large;
