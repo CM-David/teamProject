@@ -3,7 +3,10 @@
   <head>
     <title>404 Error Page</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
+    <meta name="description" content="Recipe Search Engine">
+    <meta name="keywords" content="Recipes, Leftovers, Refridgerator Contents, Pizza">
+    
     <!-- For Reponsive Design-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -37,24 +40,26 @@
     crossorigin="anonymous"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTQgP5A7T7-vr36Ce3GOp3uBeSkw-whIk&libraries=places&callback=initMap" async defer></script>
-
   </head>
 
   <body>
-    <!--Navbar starts here-->
-    <div class="container-fluid bg-primary p-0">
-      <nav class="navbar navbar-light navBG font font-weight-bolder d-flex justify-content-between">
-          <a class="nav-link text-light navFontSize" href="../index.html"><i class="fas fa-home iconColor"></i> Home <span class="sr-only">(current)</span></a>
-          <a class="nav-link text-light navFontSize" href="https://www.google.com/search?q=pizza+near+me&oq=pizza+near+me&aqs=chrome..69i57j0l7.5297j0j7&sourceid=chrome&ie=UTF-8"><i class="fas fa-pizza-slice iconColor"></i> When In Doubt...Pizza <span class="sr-only">(current)</span></a>
-      </nav><!--Navbar ends here-->
 
-    <!-- Map starts here -->
-    <div class="d-flex row" id="map-container">
-      <div class="d-flex col" id="map"></div> 
-    </div> 
-    <!-- Map ends here -->
+  <!--Navbar starts here-->
+  <div class="container-fluid bg-primary p-0 w-100">
+    <nav class="navbar navbar-light navBG font font-weight-bolder d-flex justify-content-between">
+        <a class="nav-link text-light navFontSize" href="index.html"><i class="fas fa-home iconColor"></i> Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link text-light navFontSize" href="https://www.google.com/search?q=pizza+near+me&oq=pizza+near+me&aqs=chrome..69i57j0l7.5297j0j7&sourceid=chrome&ie=UTF-8"><i class="fas fa-pizza-slice iconColor"></i> When In Doubt...Pizza <span class="sr-only">(current)</span></a>
+    </nav>
+  </div>
+  <!--Navbar ends here-->
 
-    <!--Start of footer--> 
+  <!-- Map starts here -->
+  <div class="d-flex row" id="map-container">
+    <div class="d-flex col" id="map"></div> 
+  </div> 
+  <!-- Map ends here -->
+
+   <!--Start of footer--> 
     <div class="d-flex align-items-end container-fluid h-100 p-0">
       <div class="row flex-row align-items-center h-100 w-100" id="footer">
           <div class="col-sm-12 col-md-6 d-flex justify-content-center h-100">
