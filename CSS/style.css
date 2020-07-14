@@ -36,6 +36,20 @@ label{
     font-weight: bold;
 }
 
+.list-item{
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+    list-style-type: none;
+    font-size: 50px;
+    color: #F34213;
+    text-align: left;
+    margin-bottom: 15px;
+    transition: width 0.30s ease-in-out;
+    transform: translate(-50%, -50%)
+
+}
+
+
 #form{
     height: 80vh;
   }
